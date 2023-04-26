@@ -25,3 +25,22 @@ nav{
     height: .3rem;
     background-color: black;
 }
+.main-section{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+}
+.exercise-item{
+    display: flex;
+    gap: 1rem 2rem;
+    max-width: 60rem;
+}
+.graphic{
+    object-fit: cover;
+    height: 200px;
+    border: 0.25rem solid gold;
+    border-radius: 2rem;
+  }
