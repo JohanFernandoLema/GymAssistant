@@ -34,9 +34,14 @@ nav{
     justify-items: center;
 }
 .exercise-item{
-    display: flex;
-    gap: 1rem 2rem;
+    display: grid;
+    gap: 1rem 0;
     max-width: 60rem;
+}
+.exercise-info header{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 1rem;
 }
 .graphic{
     object-fit: cover;
