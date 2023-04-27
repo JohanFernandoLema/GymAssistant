@@ -39,8 +39,10 @@ const exercises =
 ]
 
 //target the main section (where the items are going to be displayed)
-
 const mainSection = document.querySelector('.main-section');
+
+//select all the buttons from our html file
+const buttonsFilter = document.querySelectorAll('.button-filter');
 
 //Retrieve the DOM (using DOMContentLoaded) when page is loaded
 window.addEventListener('DOMContentLoaded', function(){
@@ -61,7 +63,7 @@ function displayExercisesItems(exerciseItems){
                 <h4>${exercise.name}</h4>
                 <h4>${exercise.muscleTarget}</h4>
             </header>
-            <h4>Exercise to add to your rutine</h4>
+            <h4 class="rutine">Exercise to add to your rutine</h4>
         </div>
     </article>`
     });

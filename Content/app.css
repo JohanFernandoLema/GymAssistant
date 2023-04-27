@@ -13,10 +13,41 @@ body{
 nav{
     margin-top: 20px;
     width: 80%;
-    margin: 0 auto;
+    margin: 3rem auto;
     text-align: center;
     background-color: aqua;
     cursor: pointer;
+}
+.container{
+    background-color: aquamarine;
+    width: 90%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 2rem;
+}
+.container .buttons{
+    background-color: beige;
+}
+.container .buttons .button-filter{
+    background-color: beige;
+    display: block;
+    outline: none;
+    width: 50%;
+    height: 5%;
+    margin: 2rem 0;
+    border-radius:1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+    left: 25%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 1px solid goldenrod;
+}
+.container .buttons .button-filter:hover{
+    background-color: goldenrod;
+    color: black;
 }
 .underline{
     position: relative;
@@ -26,22 +57,20 @@ nav{
     background-color: black;
 }
 .main-section{
-    width: 90vw;
-    margin: 0 auto;
-    max-width: 1170px;
     display: grid;
-    gap: 3rem 2rem;
-    justify-items: center;
+    justify-content: space-around;
+    grid-template-columns: 25% 25%;
 }
-.exercise-item{
-    display: grid;
-    gap: 1rem 0;
-    max-width: 60rem;
+.exercise-item img{
+    width: 120%;
 }
 .exercise-info header{
     display: flex;
     justify-content:space-between;
     margin-bottom: 1rem;
+}
+.exercise-info .rutine{
+    margin-bottom: 2rem;
 }
 .graphic{
     object-fit: cover;
