@@ -1,0 +1,40 @@
+Steps for js file
+1.- Create array with objects to be display in our DOM
+2.- Load items with the DOMContentloaded property
+3.- create a function with map property in order to access each item's property in the array list.
+4.- Use template string to replace its content with the values accessed
+5.- Use join property in order to place them together in one string.
+6.- Display items in the html document by selecting the parent that is mainSection and passing the displayExercises to it.
+
+1st part
+//target the main section (where the items are going to be displayed)
+
+const mainSection = document.querySelector('.main-section');
+
+2//Retrieve the DOM (using DOMContentLoaded) when page is loaded
+window.addEventListener('DOMContentLoaded', function(){
+    3//Use map method in order to be able to modify our objects.
+    let displayExercises = exercises.map(function(exercise){
+        4//template string to be able to write html code in js
+        //We start accessing the objects by each property.
+        return `<article class="exercise-item">
+        <img src=${exercise.img} alt="chest" class="graphic">
+        <div class="exercise-info">
+            <header>
+                <h4>${exercise.name}</h4>
+                <h4>${exercise.muscleTarget}</h4>
+            </header>
+            <h4>Exercise to add to your rutine</h4>
+        </div>
+    </article>`
+    });
+    5//Use join method to place the item together
+    displayExercises = displayExercises.join('');
+    6//Display items in the html document by selecting the parent that is mainSection and passing the displayExercises to it.
+    mainSection.innerHTML = displayExercises;
+    console.log(displayExercises);
+});
+
+
+7.- Create a function to store the display exercises, we do this in order to make easier at them moment of reading the code.
+8.- Once the funtion is created its parameter will look for an arry in this case is our array with the objects.
