@@ -10,71 +10,36 @@ body{
     text-transform: capitalize;
     font-family: poppins, 'sans-serif';
 }
+.background{
+    height: 100vh;
+    background-image: url('/Assets/images/wallpaper.jpg');
+}
 nav{
-    margin-top: 20px;
-    width: 80%;
-    margin: 3rem auto;
     text-align: center;
-    background-color: aqua;
-    cursor: pointer;
-}
-.container{
-    background-color: aquamarine;
-    width: 90%;
-    margin: 3rem auto;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    padding: 2rem;
-}
-.container .buttons{
-    background-color: beige;
-}
-.container .buttons .button-filter{
-    background-color: beige;
-    display: block;
-    outline: none;
-    width: 50%;
-    height: 5%;
-    margin: 2rem 0;
-    border-radius:1rem;
-    text-transform: capitalize;
-    cursor: pointer;
+    color: #fff;
     position: relative;
-    left: 25%;
-    font-size: 1.2rem;
-    font-weight: 400;
-    border: 1px solid goldenrod;
+    top: 40%;
 }
-.container .buttons .button-filter:hover{
-    background-color: goldenrod;
-    color: black;
-}
-.underline{
-    position: relative;
-    left: 40%;
-    width: 20%;
-    height: .3rem;
-    background-color: black;
-}
-.main-section{
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: 25% 25%;
-}
-.exercise-item img{
-    width: 120%;
-}
-.exercise-info header{
-    display: flex;
-    justify-content:space-between;
-    margin-bottom: 1rem;
-}
-.exercise-info .rutine{
-    margin-bottom: 2rem;
+nav .seeExercises{
+    height: 3rem;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
 }
 .graphic{
-    object-fit: cover;
-    height: 200px;
+    /* object-fit: cover; */
+    height: 70%;
+    width: 100%;
     border: 0.25rem solid gold;
     border-radius: 2rem;
-  }
+}
+
+/* Keyframes for animation */
+@keyframes slideDown {
+    
+}
+
+@media screen and (max-width:1300px){
+
+}

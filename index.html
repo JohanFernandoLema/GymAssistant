@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="./Content/app.css">
 </head>
 <body>
-    <nav>
-        <h2 class="headLine">Start Today</h2>
-        <div class="underline"></div>
-    </nav>
+    <div class="background">
+        <nav>
+            <h2 class="headLine">Start your program today and get the benefits of a helathy body</h2>
+            <p>Do not stop fighting until you get what your mindsite proposed you</p>
+            <a href="#menu"><button class="seeExercises">See Programs</button></a>
+        </nav>
+    </div>
     <main class="container">
         <!-- Buttons with sort properties -->
-        <aside class="buttons">
+        <aside class="buttons" id="menu">
             <!-- data-id added in order to link to our dataset in js -->
-            <button class="button-filter" data-id="chest" type="button">chest</button>
+            <button class="button-filter" id="general" data-id="all" type="button">All</button>
+            <button class="button-filter" id="chestBtn" data-id="chest" type="button">chest</button>
             <button class="button-filter" data-id="back" type="button">back</button>
             <button class="button-filter" data-id="triceps" type="button">triceps</button>
             <button class="button-filter" data-id="biceps" type="button">biceps</button>
